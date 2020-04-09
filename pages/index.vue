@@ -1,6 +1,7 @@
 <template>
   <div>
     <hero />
+    <about-pilab />
     <features />
     <teasers />
     <prices />
@@ -15,6 +16,10 @@ import Teasers from '@/components/Teasers'
 import Prices from '@/components/Prices'
 import CallToAction from '@/components/CallToAction'
 
+import about_pilab from '@/components/about_pilab'
+import about_pilab_right from '@/components/about_pilab_right'
+import about_pilab_left from '@/components/about_pilab_left'
+
 export default {
   name: 'LandingPage',
   components: {
@@ -22,7 +27,11 @@ export default {
     features: Features,
     teasers: Teasers,
     prices: Prices,
-    'call-to-action': CallToAction
+    'call-to-action': CallToAction,
+    'about-pilab': about_pilab,
+    about_pilab_right: about_pilab_right,
+    about_pilab_left: about_pilab_left,
+
   }
 }
 </script>

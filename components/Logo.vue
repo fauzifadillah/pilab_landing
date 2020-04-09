@@ -5,10 +5,22 @@
     href="#"
   >
     <!--Icon from: http://www.potlabicons.com/ -->
-    <h2><strong>Padjadjaran</strong> Lab</h2>
+    <img id="color" src="~assets/img/fix.png"/>
+    <img id="mono" src="~assets/img/fix.png"/>
   </a>
 </template>
-
+<style scoped>
+#color {
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+#mono {
+  display: none;
+}
+</style>
 <script>
 export default {
   name: 'Logo',

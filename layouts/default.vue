@@ -33,6 +33,11 @@ html {
 
 .gradient {
   /* background: linear-gradient(90deg, #6200ee 0%, #03dac5 100%);  */
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  background: linear-gradient(90deg, rgb(21, 128, 250), #0da3df 100%);
+}
+
+.orange {
+  /* background: linear-gradient(90deg, #6200ee 0%, #03dac5 100%);  */
+  background-color:darkorange;
 }
 </style>
