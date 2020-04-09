@@ -5,8 +5,8 @@
     href="#"
   >
     <!--Icon from: http://www.potlabicons.com/ -->
-    <img id="color" src="~assets/img/fix.png"/>
-    <img id="mono" src="~assets/img/fix.png"/>
+    <img v-if="!isSticky" id="color" src="~assets/img/fix.png"/>
+    <img v-else id="mono" src="~assets/img/mono.png"/>
   </a>
 </template>
 <style scoped>
@@ -18,7 +18,11 @@
   height: auto;
 }
 #mono {
-  display: none;
+display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
 }
 </style>
 <script>
