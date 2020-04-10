@@ -3,7 +3,8 @@
     <div class="container mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6">
-          <logo />
+          <!-- <logo /> -->
+          <img id="footer-image" src="~assets/img/footer.png"/>
         </div>
 
         <div class="flex-1">
@@ -100,7 +101,15 @@
     >Background vector created by freepik - www.freepik.com</a>
   </footer>
 </template>
-
+<style scoped>
+#footer-image {
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+</style>
 <script>
 import Logo from '@/components/Logo'
 

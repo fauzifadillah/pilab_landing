@@ -21,32 +21,74 @@
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
       >
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
-          <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
+
+          <li v-if="!isSticky" class="mr-3">
+            <nuxt-link class="inline-block text-white font-bold no-underline hover:text-orange-400 hover:text-underline py-2 px-4" to="/services">
+              SERVICES
+            </nuxt-link>
           </li>
-          <li class="mr-3">
+          <li v-else class="mr-3">
+            <nuxt-link class="inline-block text-black font-bold no-underline hover:text-blue-600 hover:text-underline py-2 px-4" to="/services">
+              SERVICES
+            </nuxt-link>
+          </li>
+
+          <li v-if="!isSticky" class="mr-3">
             <a
-              class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              class="inline-block text-white font-bold no-underline hover:text-orange-400 hover:text-underline py-2 px-4"
               href="#"
-            >link</a>
+              id="porto_link"
+            >PORTOFOLIO</a>
           </li>
-          <li class="mr-3">
+          <li v-else class="mr-3">
             <a
-              class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              class="inline-block text-black font-bold no-underline hover:text-blue-600 hover:text-underline py-2 px-4"
               href="#"
-            >link</a>
+              id="porto_link"
+            >PORTOFOLIO</a>
           </li>
+          <li v-if="!isSticky" class="mr-3">
+            <a
+              class="inline-block text-white font-bold no-underline hover:text-orange-400 hover:text-underline py-2 px-4"
+              href="#"
+            >APPROACH</a>
+          </li>
+          <li v-else class="mr-3">
+            <a
+              class="inline-block text-black font-bold no-underline hover:text-blue-600 hover:text-underline py-2 px-4"
+              href="#"
+            >APPROACH</a>
+          </li>
+
+          <li v-if="!isSticky" class="mr-3">
+            <a
+              class="inline-block text-white font-bold no-underline hover:text-orange-400 hover:text-underline py-2 px-4"
+              href="#"
+            >PROFILES</a>
+          </li>
+          <li v-else class="mr-3">
+            <a
+              class="inline-block text-black font-bold no-underline hover:text-blue-600 hover:text-underline py-2 px-4"
+              href="#"
+            >PROFILES</a>
+          </li>
+
         </ul>
-        <button
+        <nuxt-link
+        to="/"
           :class="navActionClassList"
-          class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75"
-        >Action</button>
+          class="mx-auto lg:mx-0 hover:underline font-medium rounded mt-4 lg:mt-0 py-2 px-6 shadow opacity-75 uppercase"
+        >let's talk</nuxt-link>
       </div>
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
 </template>
-
+<style scoped>
+/* #porto_link {
+  border-bottom: 2px solid orangered;
+} */
+</style>
 <script>
 import Logo from '@/components/Logo'
 

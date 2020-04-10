@@ -8,9 +8,9 @@
         <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">{{ headline }}</h3>
         <p class="text-gray-600 mb-8 text-justify">
           {{ content }}
-          <br />
+          <!-- <br />
           <br />Images from:
-          <a class="text-orange-500 underline" href="https://undraw.co/">undraw.co</a>
+          <a class="text-orange-500 underline" href="https://undraw.co/">undraw.co</a> -->
         </p>
       </div>
     </div>

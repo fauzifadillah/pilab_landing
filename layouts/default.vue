@@ -36,6 +36,16 @@ html {
   background: linear-gradient(90deg, rgb(21, 128, 250), #0da3df 100%);
 }
 
+.gradient_orange {
+  /* background: linear-gradient(90deg, #6200ee 0%, #03dac5 100%);  */
+  background: linear-gradient(90deg, rgb(250, 17, 0), #0da3df 100%);
+}
+
+.gradient_1 {
+  /* background: linear-gradient(90deg, #6200ee 0%, #03dac5 100%);  */
+  background: linear-gradient(90deg, rgb(250, 142, 0), #0da3df 100%);
+}
+
 .orange {
   /* background: linear-gradient(90deg, #6200ee 0%, #03dac5 100%);  */
   background-color:darkorange;
