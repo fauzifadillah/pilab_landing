@@ -1,6 +1,6 @@
 <template>
   
-      <video autoplay loop muted>
+      <video playsinline autoplay loop muted>
         <source src="~assets/img/data.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
