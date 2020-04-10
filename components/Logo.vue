@@ -1,13 +1,14 @@
 <template>
-  <a
+  <nuxt-link
+    to="/"
     :class="classList"
     class="no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-    href="#"
+    
   >
     <!--Icon from: http://www.potlabicons.com/ -->
     <img v-if="!isSticky" id="color" src="~assets/img/fix.png"/>
     <img v-else id="mono" src="~assets/img/mono.png"/>
-  </a>
+  </nuxt-link>
 </template>
 <style scoped>
 #color {

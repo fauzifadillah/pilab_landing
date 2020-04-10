@@ -1,0 +1,215 @@
+<template>
+  <div>
+      
+    <!-- <hero /> -->
+    <!-- <about-pilab /> -->
+    <!-- <features /> -->
+    <!-- <intro-porto /> -->
+    <!-- <teasers/> -->
+    <!-- <div id="backvid"> -->
+      <div>
+        <video id="vid1" playsinline autoplay loop muted>
+        <source src="~assets/img/data.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay">
+              <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-white">BIG DATA ANALYTICS</h2>
+        </div>
+        <div class="konten-overlay">
+              <h6 class="w-full my-4 text-2xl font-bold leading-tight text-center text-white-800">PASSION-DRIVEN</h6>
+              <p class=" px-7 mx-8 my-2 text-1xl font-medium leading-tight text-justify text-white-800">
+                Discover, analyze, and track real-world business opportunities using Big Data Analytics. Business information, sentiment analysis, or just datasets in just a click, and fully-customizeable.
+                Discover, analyze, and track real-world business opportunities using Big Data Analytics. Business information, sentiment analysis, or just datasets in just a click, and fully-customizeable.
+                Discover, analyze, and track real-world business opportunities using Big Data Analytics. Business information, sentiment analysis, or just datasets in just a click, and fully-customizeable.
+                Discover, analyze, and track real-world business opportunities using Big Data Analytics. Business information, sentiment analysis, or just datasets in just a click, and fully-customizeable.
+                
+                
+              </p>
+        </div>
+    </div>
+    <div>
+        <video id="vid2" playsinline autoplay loop muted>
+        <source src="~assets/img/data.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay_2">
+              <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-white">BIG DATA ANALYTICS</h2>
+        </div>
+        <about-pilab-right
+        headline="Data-Driven Decision Making"
+        content="Discover, analyze, and track real-world business opportunities using Big Data Analytics. 
+        Business information, sentiment analysis, or just datasets in just a click, and fully-customizeable."
+      >
+        <img src="~assets/img/data-driven.svg" alt slot="svg" />
+      </about-pilab-right>
+        <div class="konten-overlay_2">
+              <h6 class="w-full my-4 text-2xl font-bold leading-tight text-center text-white-800">PASSION-DRIVEN</h6>
+              <p class="w-full my-2 text-1xl font-medium leading-tight text-center text-white-800">
+                Discover, analyze, and track real-world business opportunities using Big Data Analytics. Business information, sentiment analysis, or just datasets in just a click, and fully-customizeable.
+              </p>
+        </div>
+    </div>
+     <!-- <div>
+        <video id="vid2" autoplay loop muted>
+        <source src="~assets/img/data.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay">
+        <h2>Meet the crazy-smart women we asked.</h2>
+        <h2>Meet the crazy-smart women we asked.</h2>
+        </div>
+    </div> -->
+        <div class="contents">
+        <h1>Heading</h1>
+        <p>Lorem ipsum...</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    <!-- </div> -->
+    </div>
+    
+    <h1 class="my-4 text-5xl font-bold leading-tight">Code everything you can imagine </h1>
+        <p
+          class="leading-normal text-2xl mb-8 italic"
+        >Transforming ideas into code.</p>
+   
+    <!-- <prices /> -->
+    <!-- <call-to-action /> -->
+  </div>
+</template>
+<style scoped>
+.konten-overlay {
+    align-items: center;
+    justify-items: center;
+}
+.konten-overlay h3 {
+    text-align: center;
+    justify-items: center;
+}
+#backbvid {
+    height:500px;
+    width:100%;
+ 	position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+        z-index: -10;
+}
+#vid1 {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    opacity: 0.5;
+}
+#vid2 {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    opacity: 0.5;
+}
+#vid3 {
+  position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    opacity: 0.5;
+}
+.overlay {
+  /* min-height: 100vh; */
+  display: flex;
+  	align-items: baseline;
+  justify-content: center;
+  position:relative;
+    min-height: 300px;
+
+  
+}
+.overlay h2 {
+    /* background: #000 none repeat scroll 0 0;
+    color: tan;
+    font-weight: 600; */
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 120px auto 25px auto;
+}
+
+.overlay_2 {
+  /* min-height: 100vh; */
+  display: flex;
+  	align-items: top;
+  justify-content: center;
+  position:relative;
+    min-height: 300px;
+
+  
+}
+.overlay_2 h2 {
+    /* background: #000 none repeat scroll 0 0;
+    color: tan;
+    font-weight: 600; */
+    /* margin: 2rem 3rem 0; */
+    mix-blend-mode: overlay;
+    padding: 5px 15px;
+    text-align: center;
+    margin: -220px auto 25px auto;
+}
+
+.contents {
+  background-color: transparent;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+<script>
+import Hero from '@/components/Hero'
+import Features from '@/components/Features'
+import Teasers from '@/components/Teasers'
+import Prices from '@/components/Prices'
+import CallToAction from '@/components/CallToAction'
+
+import about_pilab from '@/components/about_pilab'
+import about_pilab_right from '@/components/about_pilab_right'
+import about_pilab_left from '@/components/about_pilab_left'
+import intro_porto from '@/components/intro_porto'
+import videos from '@/components/video'
+
+export default {
+  name: 'servicespage',
+  components: {
+    hero: Hero,
+    features: Features,
+    teasers: Teasers,
+    prices: Prices,
+    'call-to-action': CallToAction,
+    'about-pilab': about_pilab,
+    about_pilab_right: about_pilab_right,
+    about_pilab_left: about_pilab_left,
+    'intro-porto': intro_porto,
+    videos:videos
+  }
+}
+</script>

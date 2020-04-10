@@ -1,123 +1,96 @@
 <template>
   <div>
-      
+<div class="parallax">
+    <service-head-content
+        judul="Big Data Analytics"
+        foto="big_data_2.svg"
+    />
+</div>
+
+<service-card
+    judul="tes"
+    capt="tes"
+    desc="test"    
+/>
+<div class="parallax2">
+
+<services-head-content-mirror
+    judul="IoT Platform"
+    foto="drone.svg"
+    />
+</div>
+
+<service-card
+    judul="tes"
+    capt="tes"
+    desc="test"    
+/>
+
+<div class="parallax">
+    <service-head-content
+        judul="Progressive Web Apps"
+        foto="pwa.svg"
+    />
+</div>
+
+<service-card
+    judul="tes"
+    capt="tes"
+    desc="test"    
+/>
+<div class="parallax2">
+
+<services-head-content-mirror
+    judul="Native Apps"
+    foto="drone.svg"
+    />
+</div>
+
+<service-card
+    judul="tes"
+    capt="tes"
+    desc="test"    
+/>
+<div class="parallax">
+    <videos/>
+</div>
     <!-- <hero /> -->
     <!-- <about-pilab /> -->
     <!-- <features /> -->
     <!-- <intro-porto /> -->
     <!-- <teasers/> -->
     <!-- <div id="backvid"> -->
-      <div>
-        <video id="vid1" autoplay loop muted>
-        <source src="~assets/img/data.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-        </video>
-
-        <div class="overlay">
-              <h2 class="w-full my-2 text-2xl font-bold leading-tight text-center text-white">PASSION-DRIVEN</h2>
-        </div>
-        <div class="konten-overlay">
-              <h6 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800">PASSION-DRIVEN</h6>
-        </div>
-    </div>
-     <!-- <div>
-        <video id="vid2" autoplay loop muted>
-        <source src="~assets/img/data.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-        </video>
-
-        <div class="overlay">
-        <h2>Meet the crazy-smart women we asked.</h2>
-        <h2>Meet the crazy-smart women we asked.</h2>
-        </div>
-    </div> -->
-        <div class="contents">
-        <h1>Heading</h1>
-        <p>Lorem ipsum...</p>
-        <!-- Use a button to pause/play the video with JavaScript -->
-        <button id="myBtn" onclick="myFunction()">Pause</button>
-    <!-- </div> -->
-    </div>
-    
-    <h1 class="my-4 text-5xl font-bold leading-tight">Code everything you can imagine </h1>
-        <p
-          class="leading-normal text-2xl mb-8 italic"
-        >Transforming ideas into code.</p>
-   
-    <!-- <prices /> -->
-    <!-- <call-to-action /> -->
   </div>
 </template>
 <style scoped>
-.konten-overlay {
-    align-items: center;
-    justify-items: center;
-}
-.konten-overlay h3 {
-    text-align: center;
-    justify-items: center;
-}
-#backbvid {
-    height:500px;
-    width:100%;
- 	position:relative;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-        z-index: -10;
-}
-#vid1 {
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    object-position: center;
-    z-index: 1;
-    opacity: 0.5;
-}
-#vid2 {
-  position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    object-fit: cover;
-    object-position: center;
-    z-index: 1;
-    opacity: 0.5;
-}
-.overlay {
-  /* min-height: 100vh; */
-  display: flex;
-  	align-items: baseline;
-  justify-content: center;
-  position:relative;
-    min-height: 300px;
+.parallax {
+  /* The image used */  
+  background-image: url('~assets/img/back2.png');
 
-  
+  /* Full height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.overlay h2 {
-    /* background: #000 none repeat scroll 0 0;
-    color: tan;
-    font-weight: 600; */
-    margin: 2rem 3rem 0;
-    mix-blend-mode: overlay;
-    padding: 5px 15px;
-    text-align: center;
-    margin: 150px auto;
+
+.parallax2 {
+  /* The image used */  
+  background-image: url('~assets/img/back.png');
+
+  /* Full height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.contents {
-  background-color: transparent;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 </style>
 <script>
 import Hero from '@/components/Hero'
@@ -129,8 +102,12 @@ import CallToAction from '@/components/CallToAction'
 import about_pilab from '@/components/about_pilab'
 import about_pilab_right from '@/components/about_pilab_right'
 import about_pilab_left from '@/components/about_pilab_left'
-import intro_porto from '@/components/intro_porto'
+import servicecard from '@/components/service_card'
+import service_head_content from '@/components/service_head_content'
+import services_head_content_mirror from '@/components/services_head_content_mirror'
 import videos from '@/components/video'
+
+
 
 export default {
   name: 'servicespage',
@@ -143,8 +120,10 @@ export default {
     'about-pilab': about_pilab,
     about_pilab_right: about_pilab_right,
     about_pilab_left: about_pilab_left,
-    'intro-porto': intro_porto,
-    videos:videos
+    'service-card': servicecard,
+    'service-head-content':service_head_content,
+    'services-head-content-mirror':services_head_content_mirror,
+    videos: videos,
   }
 }
 </script>

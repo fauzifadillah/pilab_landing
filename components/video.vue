@@ -9,7 +9,21 @@
         
       
 </template>
-
+<style scoped>
+video{
+    position: relative;
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 40%;
+    width: auto;
+    height: 500px;
+    /* min-height: 300px; */
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    opacity: 0.9;
+}
+</style>
 <script>
 export default {
   name: 'videos',
