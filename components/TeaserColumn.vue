@@ -14,9 +14,9 @@
           :formatValue="formatToPrice"
           :duration="300"
         />
-        <!-- <p class="text-gray-800 text-base px-6 mb-5">
+        <p class="text-left text-gray-800 text-base px-6 mb-5">
           <slot name="content" />
-        </p> -->
+        </p>
       </a>
     </div>
     <!-- <div

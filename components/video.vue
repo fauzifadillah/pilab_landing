@@ -1,7 +1,7 @@
 <template>
   
       <video playsinline autoplay loop muted>
-        <source src="~assets/img/data.mp4" type="video/mp4">
+        <source :src="require(`@/assets/img/${vid}`)" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
         </video>
@@ -21,7 +21,7 @@ video{
     object-fit: cover;
     object-position: center;
     z-index: 1;
-    opacity: 0.9;
+    opacity: 19;
 }
 </style>
 <script>
@@ -35,6 +35,10 @@ export default {
     content: {
       type: String,
       required: false
+    },
+    vid: {
+        type: String,
+        required: true
     }
   }
 }

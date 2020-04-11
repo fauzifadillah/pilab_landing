@@ -8,7 +8,7 @@
     <h3 class="my-8 text-3xl leading-tight">Get in touch to let us know what you’re looking for.</h3>
 
     <nuxt-link
-      to="/contact-us" class="my-auto mx-auto lg:mx-0 hover:bg-orange-600 hover:text-white bg-white text-gray-800 font-small rounded-full py-4 px-8 shadow-lg"
+      to="/talk" class="my-auto mx-auto lg:mx-0 hover:bg-orange-600 hover:text-white bg-white text-gray-800 font-small rounded-full py-4 px-8 shadow-lg"
     >CONTACT US</nuxt-link>
     
   </section>

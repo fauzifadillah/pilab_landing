@@ -12,9 +12,7 @@
           :formatValue="fix"
           :duration="4000"
         /></template>
-        <template
-          v-slot:content
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</template>
+        
       </teaser-column>
       <teaser-column :rows="4" >
         <template v-slot:overline>GB OF DATASETS</template>
@@ -23,9 +21,7 @@
           :formatValue="fix"
           :duration="4000"
         /></template>
-        <template
-          v-slot:content
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</template>
+        
       </teaser-column>
       <teaser-column :rows="4" action="Action">
         <template v-slot:overline>LINES OF CODE</template>
@@ -34,16 +30,12 @@
           :formatValue="fix"
           :duration="4000"
         /></template>
-        <template
-          v-slot:content
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</template>
+        
       </teaser-column>
       <teaser-column :rows="4" action="Action">
         <template v-slot:overline>PASSION</template>
         <template v-slot:headline><span>∞</span></template>
-        <template
-          v-slot:content
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</template>
+        
       </teaser-column>
     </div>
   </section>

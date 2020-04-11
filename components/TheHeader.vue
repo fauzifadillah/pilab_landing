@@ -34,48 +34,48 @@
           </li>
 
           <li v-if="!isSticky" class="mr-3">
-            <a
+            <nuxt-link
               class="inline-block text-white font-bold no-underline hover:text-orange-400 hover:text-underline py-2 px-4"
-              href="#"
+              to="/projects"
               id="porto_link"
-            >PORTOFOLIO</a>
+            >PORTOFOLIO</nuxt-link>
           </li>
           <li v-else class="mr-3">
-            <a
+            <nuxt-link
               class="inline-block text-black font-bold no-underline hover:text-blue-600 hover:text-underline py-2 px-4"
-              href="#"
+              to="/projects"
               id="porto_link"
-            >PORTOFOLIO</a>
+            >PORTOFOLIO</nuxt-link>
           </li>
           <li v-if="!isSticky" class="mr-3">
-            <a
+            <nuxt-link
               class="inline-block text-white font-bold no-underline hover:text-orange-400 hover:text-underline py-2 px-4"
-              href="#"
-            >APPROACH</a>
+              to="/approach"
+            >APPROACH</nuxt-link>
           </li>
           <li v-else class="mr-3">
-            <a
+            <nuxt-link
               class="inline-block text-black font-bold no-underline hover:text-blue-600 hover:text-underline py-2 px-4"
-              href="#"
-            >APPROACH</a>
+              to="/approach"
+            >APPROACH</nuxt-link>
           </li>
 
           <li v-if="!isSticky" class="mr-3">
-            <a
+            <nuxt-link
               class="inline-block text-white font-bold no-underline hover:text-orange-400 hover:text-underline py-2 px-4"
-              href="#"
-            >PROFILES</a>
+             to="/profiles"
+            >PROFILES</nuxt-link>
           </li>
           <li v-else class="mr-3">
-            <a
+            <nuxt-link
               class="inline-block text-black font-bold no-underline hover:text-blue-600 hover:text-underline py-2 px-4"
-              href="#"
-            >PROFILES</a>
+              to="/profiles"
+            >PROFILES</nuxt-link>
           </li>
 
         </ul>
         <nuxt-link
-        to="/"
+        to="/talk"
           :class="navActionClassList"
           class="mx-auto lg:mx-0 hover:underline font-medium rounded mt-4 lg:mt-0 py-2 px-6 shadow opacity-75 uppercase"
         >let's talk</nuxt-link>
