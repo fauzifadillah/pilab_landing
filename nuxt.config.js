@@ -14,6 +14,9 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
+    script: [
+      { src: 'https://unpkg.com/vue-slick-carousel@1.0.5/dist/vue-slick-carousel.umd.js' }
+    ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
