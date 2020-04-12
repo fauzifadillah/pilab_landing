@@ -20,7 +20,8 @@
     "@nuxtjs/svg": "^0.1.6",
     "animated-number-vue": "^1.0.0",
     "nuxt": "2.10.0",
-    "vue-slick-carousel": "^1.0.5"
+    "swiper": "^5.3.7",
+    "vue-awesome-swiper": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
