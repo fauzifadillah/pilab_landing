@@ -22,24 +22,7 @@
     </div>
 
   <div>
-      <client-only>
-      <swiper class="swiper" :options="swiperOption">
-    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/nuxt.svg" alt /></swiper-slide>
-    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/vue.svg" alt /></swiper-slide>
-    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/laravel.svg" alt /></swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide>
-    <swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide>
-    <swiper-slide>Slide 9</swiper-slide>
-    <swiper-slide>Slide 10</swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-    <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div>
-  </swiper>
-      </client-only>
-    <!-- <VueSlickCarousel v-bind="settings">
+    <VueSlickCarousel v-bind="settings">
       <div>
           <img class="my-auto" src="~/assets/img/carousel/nuxt.svg" alt />
       </div>
@@ -100,28 +83,12 @@
       <div>
           <img class="my-auto" src="~/assets/img/carousel/elastic.svg" alt />
       </div>
-    </VueSlickCarousel> -->
+    </VueSlickCarousel>
   </div>
 
   </section>
 <div class="parallax_quote">
-    <client-only>
-      <swiper class="swiper" :options="swiperOption">
-    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/nuxt.svg" alt /></swiper-slide>
-    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/vue.svg" alt /></swiper-slide>
-    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/laravel.svg" alt /></swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide>
-    <swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide>
-    <swiper-slide>Slide 9</swiper-slide>
-    <swiper-slide>Slide 10</swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-    <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div>
-  </swiper>
-      </client-only>
+    
 </div>
 
 <section class="bg-white border-b py-8">
@@ -134,7 +101,7 @@
     </h5>
     </div>
     <div>
-    <!-- <VueSlickCarousel v-bind="settings">
+    <VueSlickCarousel v-bind="settings">
       <div>
         <a href="http://unpad.ac.id">
           <img class="my-auto" src="~/assets/img/partners/unpad.png" alt />
@@ -175,7 +142,7 @@
           <img class="my-auto" src="~/assets/img/partners/niagahoster.png" alt />
           </a>
       </div>      
-</VueSlickCarousel> -->
+</VueSlickCarousel>
   </div>
 </section>    
 
@@ -237,17 +204,10 @@ img {
 
 </style>
 <script>
-// import VueSlickCarousel from 'vue-slick-carousel'
-// import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-//  // optional style for arrows & dots
-// import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-
-import Vue from 'vue'
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-
-// import style
-import 'swiper/css/swiper.css'
-
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+ // optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
@@ -266,28 +226,46 @@ import TeaserColumn from '@/components/TeaserColumn'
 
 
 export default {
-    data() {
-      return {
-        swiperOption: {
-          slidesPerView: 5,
-          spaceBetween: 1,
-          slidesPerGroup: 5,
-           speed: 10000,
-          loop: true,
-        //   autoplay: {
-        //     delay: 0,
-        //     disableOnInteraction: false
-        //   },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-          }
+    data () {
+        return {
+           settings: {
+            "arrows": false,
+            "dots": false,
+            "infinite": true,
+            "slidesToShow": 4,
+            "slidesToScroll": 1,
+            "autoplay": true,
+            "speed": 3000,
+            "autoplaySpeed": 0,
+            "cssEase": "linear",
+            "responsive": [
+                {
+                "breakpoint": 1024,
+                "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "infinite": true,
+                    "dots": true
+                }
+                },
+                {
+                "breakpoint": 600,
+                "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2,
+                    "initialSlide": 2
+                }
+                },
+                {
+                "breakpoint": 480,
+                "settings": {
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1
+                }
+                }
+            ]
+            }      
         }
-      }
     },
   name: 'servicespage',
   components: {
@@ -304,8 +282,7 @@ export default {
     'services-head-content-mirror':services_head_content_mirror,
     videos: videos,
     'teaser-column': TeaserColumn,
-    Swiper,
-    SwiperSlide
+    VueSlickCarousel
   }
 }
 </script>
