@@ -100,7 +100,7 @@
 
     </h5>
     </div>
-    <!-- <div>
+    <div>
     <VueSlickCarousel v-bind="settings">
       <div>
         <a href="http://unpad.ac.id">
@@ -143,7 +143,7 @@
           </a>
       </div>      
 </VueSlickCarousel>
-  </div> -->
+  </div>
 </section>    
 
 
