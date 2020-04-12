@@ -274,10 +274,10 @@ export default {
           slidesPerGroup: 5,
            speed: 10000,
           loop: true,
-          autoplay: {
-            delay: 0,
-            disableOnInteraction: false
-          },
+        //   autoplay: {
+        //     delay: 0,
+        //     disableOnInteraction: false
+        //   },
           pagination: {
             el: '.swiper-pagination',
             clickable: true
