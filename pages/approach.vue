@@ -22,7 +22,7 @@
     </div>
 
   <div>
-      <no-ssr>
+      <client-only>
       <swiper class="swiper" :options="swiperOption">
     <swiper-slide><img class="my-auto" src="~/assets/img/carousel/nuxt.svg" alt /></swiper-slide>
     <swiper-slide><img class="my-auto" src="~/assets/img/carousel/vue.svg" alt /></swiper-slide>
@@ -38,7 +38,7 @@
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>
   </swiper>
-      </no-ssr>
+      </client-only>
     <!-- <VueSlickCarousel v-bind="settings">
       <div>
           <img class="my-auto" src="~/assets/img/carousel/nuxt.svg" alt />
