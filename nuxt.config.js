@@ -14,7 +14,10 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +26,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['swiper/css/swiper.css'],
+  css: ['vue-slick-carousel/dist/vue-slick-carousel.css'],
   /*
    ** Plugins to load before mounting the App
    */

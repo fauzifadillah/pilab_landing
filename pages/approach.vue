@@ -101,7 +101,7 @@
     </h5>
     </div>
     <div>
-    <VueSlickCarousel v-bind="settings">
+    <VueSlickCarousel class="w-full" v-bind="settings">
       <div>
         <a href="http://unpad.ac.id">
           <img class="my-auto" src="~/assets/img/partners/unpad.png" alt />
@@ -202,6 +202,13 @@ img {
   background-size: cover;
 }
 
+.slick-track {
+    width: 13904px; opacity: 1; transform: translate3d(-6320px, 0px, 0px); transition: -webkit-transform 3000ms linear 0s;
+}
+
+</style>
+<style>
+@import 'vue-slick-carousel/dist/vue-slick-carousel.css';
 </style>
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
