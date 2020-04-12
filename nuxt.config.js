@@ -4,14 +4,14 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Padjadjaran Lab' || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Padjadjaran Lab Official Website 2020' || ''
       }
     ],
     link: [
@@ -38,6 +38,9 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/vuetify',
     // '@nuxtjs/tailwindcss'
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-163427652-1'
+    }]
   ],
   /*
    ** Nuxt.js modules

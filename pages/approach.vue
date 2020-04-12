@@ -16,7 +16,7 @@
     <h5 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800">
     Software needs vary significantly. Cover the full spectrum with us, we're using modern technologies to cover it up. Ballerina-level of flexibility, these are some technologies we used
     </h5>
-<nuxt-link to="/project" class="uppercase mx-auto my-5 text-lg text-center border-gray-800 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+<nuxt-link to="/projects" class="uppercase mx-auto my-5 text-lg text-center border-gray-800 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
   learn more
 </nuxt-link>
     </div>
@@ -233,6 +233,15 @@ import TeaserColumn from '@/components/TeaserColumn'
 
 
 export default {
+    head () {
+        return {
+        title: 'Approach | Padjadjaran Lab',
+        meta: [
+            // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+            { hid: 'description', name: 'description', content: 'Passion. Think. Build.' }
+        ]
+        }
+    },
     data () {
         return {
            settings: {

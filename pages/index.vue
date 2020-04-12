@@ -8,6 +8,9 @@
     <!-- <videos/> -->
     <!-- <prices /> -->
     <call-to-action />
+    <client-only>
+        <cookie />
+      </client-only>
   </div>
 </template>
 
@@ -24,6 +27,8 @@ import about_pilab_left from '@/components/about_pilab_left'
 import intro_porto from '@/components/intro_porto'
 import videos from '@/components/video'
 
+import cookie from "@/components/cookie.vue";
+
 export default {
   name: 'LandingPage',
   components: {
@@ -36,7 +41,8 @@ export default {
     about_pilab_right: about_pilab_right,
     about_pilab_left: about_pilab_left,
     'intro-porto': intro_porto,
-    videos:videos
+    videos:videos,
+    cookie
   }
 }
 </script>

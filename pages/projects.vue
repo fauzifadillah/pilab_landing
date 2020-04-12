@@ -1,6 +1,6 @@
 <template>
   <div>
-<div class="pilab"></div>      
+<div class="pilab"></div>    
 <div class="porto-bigdat"></div>
     <section class="bg-white border-b py-8">
         <div class="container mx-auto flex flex-wrap pt-4 pb-12">
@@ -97,6 +97,14 @@
             <h5 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800"></h5>
         </div>
     </section>
+<div class="porto-daffa"></div>
+    <section class="bg-white border-b py-8">
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+            <h6 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800">Progressive Web Apps</h6>
+            <h3 class="w-full my-2 text-5xl font-medium leading-tight text-center text-gray-800"> Birthday Site</h3>
+            <h5 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800"></h5>
+        </div>
+    </section>       
 <div class="pilab_blue"></div> 
 
    
@@ -131,6 +139,19 @@ img {
 .pilab_blue {
   /* The image used */  
   background-image: url('~assets/img/porto/pilab_blue.png');
+
+  /* Full height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 75% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.porto-daffa {
+  /* The image used */  
+  background-image: url('~assets/img/porto/daffa.png');
 
   /* Full height */
   min-height: 500px; 
@@ -335,6 +356,15 @@ import TeaserColumn from '@/components/TeaserColumn'
 
 
 export default {
+    head () {
+        return {
+        title: 'Projects | Padjadjaran Lab',
+        meta: [
+            // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+            { hid: 'description', name: 'description', content: 'Projects' }
+        ]
+        }
+    },
     data () {
         return {
            settings: {

@@ -16,78 +16,50 @@
           <p class="uppercase text-gray-500 md:mb-3">Links</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Services</a>
+              <nuxt-link
+                to="/services"
+                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+              >Services</nuxt-link>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Portofolio</a>
+              <nuxt-link
+                to="/projects"
+                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+              >Portofolio</nuxt-link>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Approach</a>
+              <nuxt-link
+                to="/approach"
+                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+              >Approach</nuxt-link>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Profiles</a>
+              <nuxt-link
+                to="/profiles"
+                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+              >Profiles</nuxt-link>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Talk</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-auto">
-          <p class="uppercase text-gray-500 md:mb-3">Links</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Services</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Portofolio</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Approach</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Profiles</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="text-sm no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Talk</a>
+              <nuxt-link
+                to="/talk"
+                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+              >Talk</nuxt-link>
             </li>
           </ul>
         </div>
+
         <div class="flex-auto">
-          <p class="uppercase text-gray-500 md:mb-6">Social</p>
+          <p class="uppercase text-gray-500 md:mb-3">Social</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="#"
+                href="https://instagram.com/padjadjaranlab"
+                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+              >Instagram</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a
+                href="https://www.facebook.com/profile.php?id=113757206766823&ref=br_rs"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
               >Facebook</a>
             </li>
@@ -97,14 +69,22 @@
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
               >Linkedin</a>
             </li>
+            
+          </ul>
+        </div>
+
+        <div class="flex-auto">
+          <p class="uppercase text-gray-500 md:mb-3">Help</p>
+          <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
+              <nuxt-link
+                to="/policy"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Twitter</a>
+              >Legal</nuxt-link>
             </li>
           </ul>
         </div>
+
       </div>
     </div>
 

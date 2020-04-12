@@ -199,6 +199,15 @@ import TeaserColumn from '@/components/TeaserColumn'
 
 
 export default {
+    head () {
+        return {
+        title: 'LET\'S TALK | Padjadjaran Lab',
+        meta: [
+            // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+            { hid: 'description', name: 'description', content: 'Talk' }
+        ]
+        }
+    },
   name: 'servicespage',
   components: {
     hero: Hero,
