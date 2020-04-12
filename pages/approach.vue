@@ -105,7 +105,23 @@
 
   </section>
 <div class="parallax_quote">
-    
+    <client-only>
+      <swiper class="swiper" :options="swiperOption">
+    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/nuxt.svg" alt /></swiper-slide>
+    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/vue.svg" alt /></swiper-slide>
+    <swiper-slide><img class="my-auto" src="~/assets/img/carousel/laravel.svg" alt /></swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+    <swiper-slide>Slide 10</swiper-slide>
+    <div class="swiper-pagination" slot="pagination"></div>
+    <div class="swiper-button-prev" slot="button-prev"></div>
+    <div class="swiper-button-next" slot="button-next"></div>
+  </swiper>
+      </client-only>
 </div>
 
 <section class="bg-white border-b py-8">
