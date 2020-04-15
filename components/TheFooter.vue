@@ -16,34 +16,34 @@
           <p class="uppercase text-gray-500 md:mb-3">Links</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <nuxt-link
-                to="/services"
+              <a
+                href="/services"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Services</nuxt-link>
+              >Services</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <nuxt-link
-                to="/projects"
+              <a
+                href="/projects"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Portofolio</nuxt-link>
+              >Portofolio</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <nuxt-link
-                to="/approach"
+              <a
+                href="/approach"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Approach</nuxt-link>
+              >Approach</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <nuxt-link
-                to="/profiles"
+              <a
+                href="/profiles"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Profiles</nuxt-link>
+              >Profiles</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <nuxt-link
-                to="/talk"
+              <a
+                href="/talk"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Talk</nuxt-link>
+              >Talk</a>
             </li>
           </ul>
         </div>
@@ -67,7 +67,7 @@
               <a
                 href="#"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Linkedin</a>
+              >LinkedIn</a>
             </li>
             
           </ul>
@@ -77,10 +77,10 @@
           <p class="uppercase text-gray-500 md:mb-3">Help</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <nuxt-link
-                to="/policy"
+              <a
+                href="/policy"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-              >Legal</nuxt-link>
+              >Legal</a>
             </li>
           </ul>
         </div>

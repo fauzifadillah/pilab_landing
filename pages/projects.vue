@@ -20,7 +20,7 @@
 <div class="porto-event"></div>
     <section class="bg-white border-b py-8">
         <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-            <h6 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800">Confrence System & Landing Page</h6>
+            <h6 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800">Conference System & Landing Page</h6>
             <h3 class="w-full my-2 text-5xl font-medium leading-tight text-center text-gray-800"> Events</h3>
             <h5 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800"></h5>
         </div>

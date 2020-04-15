@@ -29,7 +29,7 @@
             <div class="h-1 mx-auto orange w-64 opacity-55 my-0 py-0 rounded-t"></div>
         </div>
     <h5 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800">
-    Padjadjaran Lab is an technology company based on Indonesia since 2019, We're on a mission to simplify software engineering so businesses can spend more time building something that changes the world.
+    Padjadjaran Lab is an technology company based on Indonesia since 2019, we're on a mission to simplify software engineering so businesses can spend more time building something that changes the world.
     </h5>
     </div>
 </section>    

@@ -3,6 +3,9 @@ export default {
   /*
    ** Headers of the page
    */
+  router: {
+    linkActiveClass: "text-orange-400",
+  },
   head: {
     title: 'Padjadjaran Lab' || '',
     meta: [
@@ -16,7 +19,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' }
+      { rel: 'stylesheet', href: 'https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' },
     ]
   },
   /*

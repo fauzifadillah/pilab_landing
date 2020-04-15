@@ -9,7 +9,7 @@
     <h5 class="w-full my-2 text-2xl font-light leading-tight text-center text-gray-800">
         Working on your project is fully invested in its success. We care just as much about how your ideas, with agile development method we build the software that matters. We work, learn, colaborate, and grow together.
     </h5>
-<nuxt-link to="/project" class="uppercase mx-auto my-5 text-lg text-center border-gray-800 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+<nuxt-link to="/projects" class="uppercase mx-auto my-5 text-lg text-center border-gray-800 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
   learn more
 </nuxt-link>
     </div>
